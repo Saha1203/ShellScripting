@@ -1,0 +1,67 @@
+1. List of commands use daily activites
+
+cd ls mkdir mv cp top ping netstat telnet ps cat touch vim ifconfig curl pwd view tail awk 
+
+2. List all the process
+
+ps -ef 
+
+3. script to print only ERROR from remote log
+
+curl <https://lv.vuitton.net/log> | grep ERROR
+
+4. Write a script divisible by 3 , 5 but not 15
+
+check git repo 3,5,15
+
+5. How will you debug the shell script?
+set -x
+
+6. What is cron-tab in linux? Can you provide an example of usage?
+Crontab -> Linux admin
+report --> node health check in a particular time
+
+7. How to open a read-only file?
+vim -r test.txt
+
+8. What is the difference between soft link and hard link?
+hard link = copy a file , if I delete any back will always be there 
+soft link = symlink a file , if I delete any there will be nothing blank
+
+9. what is the diff between BREAK and CONTINUE
+
+10. Disadvantage of Shell Scripting
+
+11. what are the diff types of loops?
+
+12. Is bash statically typed or Dynamically typed and why?
+Dynamically typed 
+
+13.Explaining about the network troublshooting utility
+best tool is -- TRACEROUTE
+
+example:
+
+
+ubuntu@ip-172-31-39-194:~$ traceroute google.com
+traceroute to google.com (142.250.74.78), 30 hops max, 60 byte packets
+ 1  ec2-13-53-0-201.eu-north-1.compute.amazonaws.com (13.53.0.201)  1.076 ms ec2-13-53-0-203.eu-north-1.compute.amazonaws.com (13.53.0.203)  1.662 ms *
+ 2  240.0.16.12 (240.0.16.12)  0.238 ms 240.0.16.14 (240.0.16.14)  0.374 ms 240.0.16.13 (240.0.16.13)  0.207 ms
+ 3  242.0.125.39 (242.0.125.39)  3.801 ms 242.0.124.39 (242.0.124.39)  3.734 ms 242.0.124.165 (242.0.124.165)  3.140 ms
+ 4  240.0.196.12 (240.0.196.12)  3.269 ms 240.0.196.14 (240.0.196.14)  3.347 ms 240.0.196.13 (240.0.196.13)  3.240 ms
+ 5  240.0.196.16 (240.0.196.16)  3.321 ms 240.0.196.18 (240.0.196.18)  3.172 ms 240.0.196.26 (240.0.196.26)  3.152 ms
+ 6  99.83.118.165 (99.83.118.165)  3.656 ms 74.125.119.32 (74.125.119.32)  5.376 ms  4.476 ms
+ 7  * * *
+ 8  142.251.48.44 (142.251.48.44)  3.363 ms 142.250.239.182 (142.250.239.182)  4.417 ms 209.85.246.56 (209.85.246.56)  3.603 ms
+ 9  142.251.65.81 (142.251.65.81)  3.301 ms  3.286 ms 192.178.73.202 (192.178.73.202)  4.107 ms
+10  arn09s23-in-f14.1e100.net (142.250.74.78)  3.253 ms  3.551 ms 108.170.233.11 (108.170.233.11)  3.963 ms
+ubuntu@ip-172-31-39-194:~$
+
+
+using TRACEPATH you can do the same, advantanges tracepath does not need root previlages
+
+14. How will you sort names in a file in linux?
+Linux is having inbuild command named SORT
+
+15. How you manage linux log/ Application log?
+using logrotate inbuild command 
