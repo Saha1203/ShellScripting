@@ -1,5 +1,14 @@
 #!/bin/bash
 
+#####################
+#Author : Rahul 
+#Date : 12/09/2024
+#
+#This script outputs checks the trap command execution 
+#
+#Version : v1
+#####################
+
 function my_fun()
 {
  echo "inside trapped function"
